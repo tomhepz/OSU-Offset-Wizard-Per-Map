@@ -43,7 +43,7 @@ with mss.mss() as sct:
         #print("Delta:")
         #printRow(deltaimg)
         if checkHit(deltaimg) and img[0][int(bar_width/2)]==255:
-            count += 1
+            cgit adount += 1
             error.append(-((bar_width/2)-checkHit(deltaimg)))
         # Display the picture
         cv2.imshow("OpenCV/Numpy normal", img)

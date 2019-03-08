@@ -116,3 +116,5 @@ dmypy.json
 .pyre/
 
 pywin32-224-cp37-cp37m-win_amd64.*
+
+.vscode
