@@ -8,6 +8,16 @@ pylint = "*"
 autopep8 = "*"
 
 [packages]
+numpy = "*"
+win32gui = "*"
+pywin32 = {path = "./pywin32-224-cp37-cp37m-win_amd64.whl"}
+wheels = "*"
+mss = "*"
+cv2 = "*"
+opencv = "*"
+opencv-python = "*"
+matplotlib = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.7"
