@@ -43,7 +43,7 @@ with mss.mss() as sct:
         #print("Delta:")
         #printRow(deltaimg)
         if checkHit(deltaimg) and img[0][int(bar_width/2)]==255:
-            cgit adount += 1
+            count += 1
             error.append(-((bar_width/2)-checkHit(deltaimg)))
         # Display the picture
         cv2.imshow("OpenCV/Numpy normal", img)
@@ -58,7 +58,8 @@ with mss.mss() as sct:
             plt.plot(h,fit,'-o')
 
             plt.hist(h,normed=True)      #use this to draw histogram of your data
-
+            plt.axvline(numpy.mean(h), color='k', linestyle='dashed', linewidth=1)
+            plt.axvline(0, color='k', linestyle='solid', linewidth=1)
             plt.show()                   #use may also need add this 
             #####
             cv2.destroyAllWindows()
